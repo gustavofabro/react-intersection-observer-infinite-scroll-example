@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const perPage = 20;
+
+  const [data, setData] = useState(Array.from(Array(perPage).keys()).map(item => (
+    {
+      id: item,
+      description: `Item ${item}`
+    }
+  )));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="app">
+      <div className="list">
+       {data.map(item => (
+         <span key={item.id} className="item">{item.description}</span>
+       ))}
+      </div>
+    </main>
   );
 }
 
