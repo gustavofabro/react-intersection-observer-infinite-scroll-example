@@ -17,7 +17,7 @@ function App() {
 
   function mockApiCall() {
     return new Promise<void>((resolve) => {
-      setTimeout(() => resolve(), 5000);
+      setTimeout(() => resolve(), 1000);
     });
   }
 
