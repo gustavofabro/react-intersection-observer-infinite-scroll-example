@@ -2,6 +2,10 @@
 
 ![Screenshot](assets/example.gif)
 
+Example code for the article:
+
+https://medium.com/@gustavofabro.f/infinite-scroll-utilizando-intersection-observer-com-react-f0ccb6ff21e5
+
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
